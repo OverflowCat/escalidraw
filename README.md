@@ -1,4 +1,4 @@
-# Excalidraw to SVG
+# Excalidraw to SVG (ESM ver. fork)
 
 Node Library to transform excalidraw diagrams into svgs!
 Useful if you are storing excalidraw diagrams in repos and want a pipeline to export them.

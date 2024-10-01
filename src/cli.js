@@ -3,9 +3,9 @@
 // this file is a cli script that can be used in a deployment setup
 // it expects the diagram file name, and optionally an output directory or file
 
-const fs = require("fs");
-const excalidrawToSvg = require("./excalidraw-to-svg");
-const buildSvgPath = require("./build-svg-path");
+import fs from "fs";
+import excalidrawToSvg from "./excalidraw-to-svg.js";
+import buildSvgPath from "./build-svg-path.js";
 
 const excalidrawPath = process.argv[2];
 

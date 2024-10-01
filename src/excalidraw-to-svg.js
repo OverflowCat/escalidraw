@@ -1,5 +1,5 @@
-const fs = require("fs"); // used to read in node_module as script
-const jsdom = require("jsdom"); // used to create mock web interface (which excalidraw-utils depends on)
+import fs from "fs"; // used to read in node_module as script
+import jsdom from "jsdom"; // used to create mock web interface (which excalidraw-utils depends on)
 
 /**
  * Function to convert an excalidraw JSON file to an SVG
@@ -20,6 +20,9 @@ const excalidrawToSvg = (diagram) => {
     "./node_modules/canvas-5-polyfill/canvas.js",
     "utf8"
   );
+
+  // console.info("excalidrawUtils", excalidrawUtils);
+  // console.info("path2DPolyfill", path2DPolyfill);
 
   // if the diagram is not a string, it's probably an object, and we need to stringify it
   const stringDiagram =
@@ -77,4 +80,4 @@ const excalidrawToSvg = (diagram) => {
   return svgPromise;
 };
 
-module.exports = excalidrawToSvg;
+export default excalidrawToSvg;

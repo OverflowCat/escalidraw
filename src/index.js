@@ -1,2 +1,2 @@
-const excalidrawToSvg = require("./excalidraw-to-svg");
-module.exports = excalidrawToSvg;
+import excalidrawToSvg from "./excalidraw-to-svg";
+export default excalidrawToSvg;

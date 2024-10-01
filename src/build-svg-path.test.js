@@ -1,4 +1,4 @@
-const buildSvgPath = require("./build-svg-path");
+import buildSvgPath from "./build-svg-path";
 
 describe("buildSvgPath", () => {
   test.each`

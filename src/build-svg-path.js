@@ -1,4 +1,4 @@
-const path = require("path");
+import path from "path";
 
 /**
  * Simple function to convert an excalidraw filename to svg filename
@@ -27,4 +27,4 @@ const buildSvgPath = (diagramPath, svgPath) => {
   return svgPath;
 };
 
-module.exports = buildSvgPath;
+export default buildSvgPath;

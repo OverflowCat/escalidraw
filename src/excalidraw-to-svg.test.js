@@ -1,4 +1,4 @@
-const excalidrawToSvg = require("./excalidraw-to-svg");
+import excalidrawToSvg from "./excalidraw-to-svg";
 
 const mockDiagram = {
   type: "excalidraw",
